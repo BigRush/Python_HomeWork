@@ -10,12 +10,12 @@ def Input_A_Num ():
 
 
 def Input_B_Num ():
-        try:
-            b_num=int(input("Please enter another number: "))
-            return b_num
-        except:
-            print("Invalid number plese try again")
-            Input_B_Num ()
+    try:
+        b_num=int(input("Please enter another number: "))
+        return b_num
+    except:
+        print("Invalid number plese try again")
+        Input_B_Num ()
 
 
 def Compare_Nums (a_num, b_num):
@@ -24,7 +24,7 @@ def Compare_Nums (a_num, b_num):
     elif a_num < b_num:
         print("{} is bigger than {}".format(b_num, a_num))
     elif a_num == b_num:
-        print("{} {} are equals".format(a_num, b_num))
+        print("{} and {} are equals".format(a_num, b_num))
 
 
 def Sum_Nums (a_num, b_num):
